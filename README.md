@@ -4,7 +4,7 @@ A living map of environmental DNA (eDNA): machine-readable for the scientists wh
 
 Built at the Decode the Ocean hackathon, sponsored by Lovable and the United Nations, where it won first place.
 
-Live demo: https://adrianerlikhman.is-a.dev/eDNAtlas
+**Live app: https://adrianerlikhman.is-a.dev/eDNAtlas**
 
 ## The problem
 
@@ -16,16 +16,21 @@ It puts eDNA on a map. Click a site and you get one number and one plain-languag
 
 One artifact serves two audiences. Underneath is a standards-compliant, queryable index. On top is a page you can read without a biology degree.
 
+The app has four parts:
+
+- **Map** with clickable sample sites and a live detail panel (glance, plain-language meaning, and the raw evidence, plus generated sample downloads).
+- **Rankings**, a habitat-matched leaderboard so a site is only compared against like-for-like habitat.
+- **Discoveries**, a dashboard of novel and non-native detections and per-site diversity.
+- **Method**, the FAIR pipeline and the scoring-component breakdown.
+
 ## Standards
 
 Darwin Core plus the DNA-derived data extension, in and out, so records can publish onward to GBIF and OBIS instead of forming another silo.
 
 ## Running it
 
-`index.html` is a self-contained interactive pitch deck. Open it in a browser. Arrow keys move between slides, F toggles fullscreen, and the map on slide 5 is clickable.
+`index.html` is the app, fully self-contained. Open it in a browser or serve the folder statically. No build step.
 
-Site-level figures in the deck are illustrative sample data for Southern California. The interaction, the scoring model, and the layout are the deliverable.
+`deck.html` is the original pitch deck from the hackathon (arrow keys move between slides, F for fullscreen).
 
-## Built at the hackathon
-
-Interactive map with clickable sample sites, the Ecosystem Health Index and its scoring components, plain-language site readouts, habitat-matched comparison and a leaderboard, a discovery dashboard for novel and non-native detections, and the Darwin Core ingest schema.
+Site-level figures are illustrative sample data for Southern California. The interaction, the scoring model, and the layout are the deliverable.
